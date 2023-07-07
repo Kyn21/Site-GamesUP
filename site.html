@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Games UP 🎮 </title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/siteCSS.css">
+
+		<!-- Zoom -->
+
+			<style>
+				.Galeria {
+			        display: flex;
+			      }
+			      .btn-primary{
+			        margin-bottom: 8px;
+			        margin-top: 13px;
+			      }
+			      .Galeria img {
+			        width: 400px;
+			        border: 1px solid rgb(255, 255, 255);
+			        margin-right: 10px;
+			      }
+
+			      .conteudo {
+			        margin-top: 20px;
+			      }
+
+			      .zoom {
+			      transition: .2s transform;
+			      margin-bottom: 10px;
+			      }
+
+			      .zoom:hover {
+			      transform: scale(1.05)
+			      }
+
+			</style>
+
+		<!-- Fim Zoom -->
+	</head>
+	<body style="background-color: #95a5a6;">
+
+		<!--NavBar-->
+		<nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+		  <div class="container-fluid">
+    		<a class="navbar-brand" href="#"><b> Games UP 🎮 </b></a>
+   			 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   			 </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-book-half"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Galeria">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contatos"> Contatos </a>
+
+
+
+        </li>
+      </ul>
+
+       <li class="nav-item">
+          <a class="nav-link" href="#Contatos"> Contatos </a>
+        </li>
+
+     
+              <!-- Botão modal -->
+			<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			  Entrar
+			</button>
+			<!-- Fim Botão modal -->
+
+			<!--  Modal -->
+
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content"> 
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="exampleInputEmail1"> Informe seu E-mail: </label>
+			            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Informe seu E-mail:">
+			          </div>
+			          <div class="form-group">
+			            <label for="exampleInputPassword1"> Digite sua Senha: </label>
+			            <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" Digite sua Senha:">
+			          </div>
+			          
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+      </div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		     <!-- modal -->
+
+       
+    </div>
+  </div>
+</nav>
+
+   <!-- Toasts -->
+        <hr>
+        <center> <button type="button" class="btn btn-light" id="liveToastBtn">     🎮      </button> </center>
+        <hr>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="imgs/jonVitELusca.PNG" class="rounded me-2" alt="...">
+              <strong class="me-auto"></strong>
+              
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+           		A vida é um jogo, ou você aprende a jogar, ou pra sempre ficará no Game-Over. - Víctor Müller
+            </div>
+          </div>
+        </div>
+
+        <!-- Fim Toasts -->
+
+	   <!-- Fim navBar-->
+
+	   <!--Slide Show-->
+
+	   <div id="carouselExampleIndicators" class="carousel slide">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+	  <div class="carousel-inner" width= >
+	    <div class="carousel-item active">
+	      <img src="imgs/hogwarts.png" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="imgs/spider.png" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="imgs/tlou.png" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+
+		<!-- Fim Slide Show-->
+
+
+
+
+
+		<!-- Galeria -->
+
+		 <div class="container mt-5 " id="Galeria">
+      <div class="row" >
+
+        <div class="col-md-4 tamanho1" >
+          <img src="imgs/mine.png" class="img-fluid zoom" alt="Imagem 1">
+        </div>
+
+        <div class="col-md-4 tamanho2" >
+          <img src="imgs/stardew.png" class="img-fluid zoom" alt="Imagem 2">
+        </div>
+
+        <div class="col-md-4 tamanho3">
+          <img src="imgs/mario.png" class="img-fluid zoom" alt="Imagem 3">
+        </div>
+
+        <div class="col-md-4" >
+          <img src="imgs/sims.png" class="img-fluid zoom" alt="Imagem 4">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/fifa23.png" class="img-fluid zoom" alt="Imagem 5">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/finalfan.png" class="img-fluid zoom" alt="Imagem 6">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/lol.png" class="img-fluid zoom" alt="Imagem 7">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/gtav.png" class="img-fluid zoom" alt="Imagem 8">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/red.png" class="img-fluid zoom" alt="Imagem 9">
+        </div>
+
+      </div>
+    </div>
+
+		<!-- Fim Galeria -->
+
+		<!-- Tabelas -->
+
+      <p><h1> <b style="background-color: #95a5a6;"> Top 5 Jogos mais jogados atualmente </b></h1></p>
+		<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Top</th>
+      <th scope="col">Jogo:</th>
+      <th scope="col">Nº de jogadores:</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Roblox</td>
+      <td>199 Milhões de jogadores simultâneos.</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Minecraft</td>
+      <td>140 Milhões de jogadores simultâneos.</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Call of Duty: Warzone</td>
+      <td>100 Milhões de jogadores simultâneos.</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Free Fire</td>
+      <td>50 Milhões de jogadores simultâneos.</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Fortnite</td>
+      <td>12.3 Milhões de jogadores simultâneos.</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+		<!-- Fim Tabelas-->
+
+		<!-- scroll -->
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
+
+		<!-- fim scroll -->
+
+
+		<!-- Cards -->
+      <div
+      id="carouselMultiItemExample"
+      class="carousel slide carousel-dark text-center"
+      data-mdb-ride="carousel"
+    >
+      <!-- Inner -->
+      <div class="carousel-inner py-4">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <img
+                    src="imgs/tlou.png"
+                    class="card-img-top"
+                    alt="Waterfall"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"> The Last Of Us </h5>
+                    <p class="card-text">
+                       The Last of Us é uma franquia de jogos eletrônicos de ação-aventura e survival horror exclusiva da PlayStation, criada por Neil Druckmann. A franquia é situada em um mundo pós-apocalíptico, com seres humanos hostis e criaturas canibais infectadas por uma mutação do fungo cordyceps. 
+                    </p>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img
+                    src="imgs/hogwarts.png"
+                    class="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"> Hogwarts Legacy </h5>
+                    <p class="card-text">
+                       Hogwarts Legacy é um jogo eletrônico de RPG de ação desenvolvido pela Avalanche Software e publicado pela Warner Bros. Interactive Entertainment sob o selo Portkey Games. O jogo é ambientado no final do século XIX do universo de Harry Potter, um século antes dos eventos narrados nos livros de J.K. Rowling.
+                    </p>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img
+                    src="imgs/spider.png"
+                    class="card-img-top"
+                    alt="Sunset over the Sea"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"> Spider-Man Remastered </h5>
+                    <p class="card-text">
+                       No Spider-Man Remastered, encontramos um Peter Parker experiente e mais preparado para enfrentar a onda de crimes de Nova York. Em contrapartida, ele luta para conciliar o caos em sua vida pessoal e carreira enquanto o destino da Nova York da Marvel pesa sobre seus ombros.
+                    </p>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      <!-- Fim Cards -->
+
+
+
+
+      <!-- Rodapé -->
+
+      	
+
+<div class="container">
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <p class="text-body-secondary">&copy; Amélia Figueiredo de Lavor - 2º "i" - 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Criadoras</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Karolina Silva </a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Rayane Pereira </a></li> 
+      </ul>
+    </div>
+
+    
+
+    <div class="col mb-3">
+      <h5 id="Contatos">Contatos</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Instagram > @rayaneoliveira_08</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Instagram >@_karolinasilvac</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Whatsapp > (88)-9-8862-3741/(88)-9-9237-7197</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Twitter > @_theaddams</a></li>
+      </ul>
+    </div>
+
+    		
+
+  </footer>
+</div>   
+
+
+
+      <!-- Fim Rodapé-->
+
+     
+
+
+     
+
+
+
+
+
+
+		<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="siteJS.js"></script>
+	</body>
+</html>
